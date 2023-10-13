@@ -454,64 +454,73 @@ button {
     height: auto;
 }
 
-/* --- --- CAROUSEL --- --- */
-.carousel__contenedor {
-	position: relative;
-}
+.carrousel {
+    width: 90%;
+    max-width: 120em;
+    padding: 2em;
+    color: var(--negro);
+    transition: all 0.4s ease;
+    border-radius: 1em;
+    background-color: var(--blanco);
+    box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+    overflow: hidden;
+  }
+  
+  .carrousel .grande {
+    width: 225%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--negro);
+    transition: all 0.4s ease;
+    border-radius: 1em;
+    background-color: var(--blanco);
+    box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+    padding: 2em;
+    transition: all 0.5s ease;
+    transform: translateX(0%);
+  }
+  
+  .carrousel .img {
+    width: calc( 100% / 2 - 2em);
+    min-height: 10vh;
+    color: var(--negro);
+    transition: all 0.4s ease;
+    border-radius: 1em;
+    background-color: var(--blanco);
+    box-shadow: 1em 1em 2em var(--sombra-ppal), -1em -1em 2em var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  }
+  
+  .carrousel .puntos {
+    width: 100%;
+    margin: 1em 0 0;
+    padding: 0.4em;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .carrousel .punto {
+    width: 2em;
+    height: 2em;
+    margin: 1em 1em 0;
+    color: var(--negro);
+    transition: all 0.4s ease;
+    border-radius: 1em;
+    background-color: var(--blanco);
+    box-shadow: 0.6em 0.6em 1.2em var(--sombra-ppal), -1em -0.6em 1.2em var(--sombra-sec), 
+    inset 0 0 0 transparent, inset 0 0 0 transparent;
+  }
+  .punto{
+    background-image: linear-gradient(to bottom, #303845, #3C4557, #363D4D);
+  }
 
-.carousel__anterior,
-.carousel__siguiente {
-	position: absolute;
-	display: block;
-	width: 30px;
-	height: 30px;
-	border: none;
-	top: calc(50% - 35px);
-	cursor: pointer;
-	line-height: 30px;
-	text-align: center;
-	background: none;
-	color: #fff;
-	opacity: 20%;
-}
-
-.carousel__anterior:hover,
-.carousel__siguiente:hover {
-	opacity: 100%;
-}
-
-.carousel__anterior {
-	left: -30px;
-}
-
-.carousel__siguiente {
-	right: -30px;
-}
-
-.carousel__lista {
-	overflow: hidden;
-}
-
-.carousel__elemento {
-	text-align: center;
-}
-
-.carousel__indicadores .glider-dot {
-	display: block;
-	width: 30px;
-	height: 4px;
-	background: #fff;
-	opacity: .2;
-	border-radius: 0;
-}
-
-.carousel__indicadores .glider-dot:hover {
-	opacity: .5;
-}
-
-.carousel__indicadores .glider-dot.active {
-	opacity: 1;
-}
+  
+ .punto.activo {
+    background-color: lightblue;
+  }
     /** historia section **/
 /** obra section **/
 
