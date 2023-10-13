@@ -525,12 +525,12 @@ button {
 /** obra section **/
 
 .casino {
-    background-color: #1b0905;
+    background-color: #ffffff;
     padding-top: 90px;
 }
 
 .casino .game_box {
-    background-image: linear-gradient(to right, #bc883d, #f5e47b, #bc883d);
+    background-image: linear-gradient(to bottom, #303845, #3C4557, #363D4D);
     padding: 20px;
 }
 
@@ -553,7 +553,7 @@ button {
     max-width: 200px;
     width: 100px;
     margin: 0 auto;
-    border: #cca24f solid 4px;
+    border-image: linear-gradient(to right, #303845, #3C4557, #363D4D);
     padding: 8px;
     z-index: 999;
     position: relative;
@@ -568,141 +568,58 @@ button {
 /** end obras section **/
 
     /** footer section **/
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+}
 
 .footer {
-    background: #1b0905;
-    padding-top: 90px;
-}
-
-.newtetter {
-    padding-right: 60px;
-}
-
-.newtetter .tetter {
-    border-bottom: #ddd solid 1px !important;
-    background: transparent;
-    padding: 7px 0px;
-    border-radius: inherit;
-    font-size: 17px;
-    color: #fff;
-    border: inherit;
-    width: 100%;
-}
-
-.submit {
-    margin-top: 15px;
-    background: transparent;
-    padding: 5px 45px;
-    color: #5d5756;
-    transition: all .4s ease-in;
-    float: right;
-    margin-bottom: -34px;
-    border: #a19a98 solid 2px;
-    border-radius: 39px;
-    cursor: pointer;
-    font-size: 17px;
-    position: relative;
-    font-weight: 500;
-}
-
-.submit:hover {
-    background: #fff;
-    color: #000;
-    border-radius: 20px;
-    transition: all .4s ease-in;
-}
-
-.address h3 {
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 25px;
-    line-height: 27px;
-    font-weight: 700;
-    padding-bottom: 20px;
-    background-image: linear-gradient(to bottom, #bc883d, #f5e47b, #bc883d);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.address p {
-    color: #fff;
-    padding-bottom: 15px;
-}
-
-ul.Menu_footer li {
-    padding-bottom: 6px;
-    display: block;
-    color: #3e7f21;
-    position: relative;
-}
-
-ul.Menu_footer li a {
-    display: block;
-    color: #888;
-    font-size: 17px;
-    line-height: 21px;
-}
-
-ul.Menu_footer li a:hover {
-    color: #f5e47b;
-}
-
-ul.Links_footer {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    float: left;
-}
-
-ul.Links_footer li {
-    color: #888;
-    display: block;
-    position: relative;
-    font-size: 20px;
-    line-height: 31px;
-}
-
-ul.loca li {
-    color: #fcfbfb;
-    padding-bottom: 10px;
     display: flex;
-    font-size: 16px;
-    line-height: 20px;
-    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
+    text-align: left;
 }
 
-ul.loca li a {
-    padding-right: 16px;
-    color: #ee3e0f;
-    margin-top: 4px;
+.container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 20px;
 }
 
-.copyright {
-    background-image: linear-gradient(to bottom, #bc883d, #f5e47b, #bc883d);
-    padding: 20px 0px;
-    margin-top: 70px;
+.col-xl-6,
+.col-lg-6,
+.col-md-6,
+.col-sm-12 {
+    padding: 0 15px;
 }
 
-.copyright p {
-    color: #000;
+.address {
+    margin-bottom: 15px;
+}
+
+.telefono, .correo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/* Estilos para el logo */
+.logoGabinete {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+/* Estilos para los íconos de redes sociales */
+h3 {
     font-size: 18px;
-    line-height: 22px;
-    text-align: center;
+    margin-bottom: 10px;
 }
 
-.copyright a {
-    color: #000;
-}
-
-.copyright a:hover {
-    color: #fff;
-}
-
-#map {
-    height: 100%;
-    min-height: 480px;
+.bi {
+    font-size: 24px;
+    margin-right: 10px;
 }
 
 
