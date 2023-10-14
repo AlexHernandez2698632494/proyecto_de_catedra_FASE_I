@@ -51,7 +51,7 @@ html {
 }
 
 body {
-    /* background-image: url('../images/IMG-20220202-WA0183.jpg'); */
+     background-image: url('../images/IMG-20220202-WA0183.jpg'); 
     background-size: cover;
     color: #666666;
     font-size: 14px;

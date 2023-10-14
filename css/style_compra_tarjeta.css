@@ -443,117 +443,45 @@ button {
 
 
 
-/** customer section **/
-
-.customer {
-    background-color: #ffffff;
-    padding-top: 90px;
-}
-
-.customer .customer_text {
-    text-align: center;
-}
-
-.customer .customer_text p {
-    font-size: 17px;
-    line-height: 35px;
-    color: #0c0c0b;
-    text-align: center;
-    font-weight: 500;
-    background-color: #d7d7d4;
-    padding: 90px 45px 150px 45px;
-}
-
-.customer .customer_text .customer_box {
-    margin-top: -75px;
-}
-
-.customer .customer_text .customer_box i {
-    border-radius: 133px;
-    padding: 72px 10px 75px 10px;
-    background-image: linear-gradient(to bottom, #bc883d, #f5e47b, #bc883d);
-}
-
-.customer .customer_text .customer_box h4 {
-    font-size: 24px;
-    padding: 25px 0px 10px 0px;
-    font-weight: 500;
-    background-image: linear-gradient(to bottom, #bc883d, #f5e47b, #bc883d);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.customer .customer_text .customer_box span {
-    color: #fff;
-    font-size: 17px;
-    line-height: 20px;
-    text-transform: uppercase;
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 25px;
-    min-height: 100vh;
-
-}
-
-.container form {
-    padding: 20px;
-    width: 700px;
-    background: rgb(179, 161, 161);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
-}
-
-.container form .row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-}
-
-.container form .row .col {
-    flex: 1 1 250px;
+.emballage {
+    max-width: 600px;
+    margin: 0 auto;
+    padding-top: 5%;
 }
 
 
 
-.container form .row .col .inputBox {
-    margin: 15px 0;
+.inputBox {
+    margin-bottom: 20px;
 }
 
-.container form .row .col .inputBox span {
-    margin-bottom: 10px;
+.inputBox span {
     display: block;
+    margin-bottom: 5px;
 }
 
-.container form .row .col .inputBox input {
+.inputBox img{
+    width: 25%;
+}
+.inputBox input {
     width: 100%;
-    padding: 10px 15px;
-    font-size: 15px;
-    text-transform: none;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-.container form .row .col .inputBox input:focus {
-    border: 1px solid #000;
-}
-
-.container form .row .col .flex {
+.flex {
     display: flex;
-    gap: 15px;
+    justify-content: space-between;
 }
 
-.container form .row .col .flex .inputBox {
-    margin-top: 5px;
-}
 
-.inputBox img {
-    width: 50px;
-    margin-top: 5px;
-    filter: drop-shadow(0 0 1px #000);
-}
 
-/** customer section **/
+.modal-body{
+    text-align: center;
+    padding: 8px;
+}
 
 
 /** footer section **/
