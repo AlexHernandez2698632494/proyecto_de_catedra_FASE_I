@@ -1,3 +1,5 @@
+
+
 /*---------------------------------------------------------------------
     File Name: style.css
 ---------------------------------------------------------------------*/
@@ -51,7 +53,7 @@ html {
 }
 
 body {
-    /* background-image: url('../images/IMG-20220202-WA0183.jpg'); */
+    background-image: url('../images/IMG-20220202-WA0183.jpg');
     background-size: cover;
     color: #666666;
     font-size: 14px;
@@ -60,7 +62,6 @@ body {
     font-weight: normal;
     overflow-x: hidden;
 }
-
 a {
     color: #1f1f1f;
     text-decoration: none !important;
@@ -154,13 +155,13 @@ img {
 }
 
 .menu_iconb {
-    background-image: linear-gradient(to bottom, #303845, #3C4557, #363D4D);
+    background-image: linear-gradient(to bottom, #303845,#3C4557, #363D4D);
     padding: 9px 38px;
     border-radius: 20px;
     margin-right: 30px;
 }
 
-.menu_iconb a {
+.menu_iconb a{
     color: rgb(255, 255, 255);
 }
 
@@ -197,14 +198,14 @@ img {
 }
 
 .banner_main h4 {
-    color: transparent;
-    /*background-image: linear-gradient(to bottom, #3C4557, #303845,#363D4D);
+color: transparent;
+/*background-image: linear-gradient(to bottom, #3C4557, #303845,#363D4D);
 -webkit-background-clip: text;*/
-    color: #4375D9;
-    font-size: 110px;
-    margin: 0;
-    padding: 200px;
-    text-align: center;
+color: #4375D9;
+font-size: 110px;
+margin:  0;
+padding: 200px;
+text-align: center;
 }
 
 
@@ -241,27 +242,16 @@ img {
     flex-wrap: wrap;
 }
 
-<<<<<<< HEAD
-#icono {
-    max-width: 50%;
-=======
 #icono{
     width: 50%;
->>>>>>> c4a37465693d935e713cf6da05e98e49deeed8fe
 }
 
 /*---------------------------------------------------------------------
     skeleton
 ---------------------------------------------------------------------*/
-<<<<<<< HEAD
-.emballage {
-    max-width: 350px;
-    min-height: 500px;
-=======
 .emballage{
     width: 350px;
     height: 500px;
->>>>>>> c4a37465693d935e713cf6da05e98e49deeed8fe
     margin: 80px auto;
     padding: 40px 30px 30px 30px;
     background-color: #ecf0f3;
@@ -342,17 +332,11 @@ img {
 .emballage a:hover {
     color: #039BE5;
 }
-
-h3,
-h4 {
+h3,h4{
     text-align: center;
     padding: 100px;
 }
-<<<<<<< HEAD
-
-=======
 /*
->>>>>>> c4a37465693d935e713cf6da05e98e49deeed8fe
 @media(max-width: 380px) {
     .emballage {
         margin: 30px 20px;

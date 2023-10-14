@@ -12,6 +12,10 @@
     .header-search {
         padding: 15px 0px;
     }
+    .right_header_info ul li {
+        display: inline;
+        margin-right: 0; /* Espacio entre los elementos */
+    }
 }
 
 
@@ -213,7 +217,7 @@
         padding: 0;
     }
     .menu_iconb {
-        display: none ;
+        display: none;
     }
     .licens_Carousel .test_box .jons h4 {
         font-size: 32px;

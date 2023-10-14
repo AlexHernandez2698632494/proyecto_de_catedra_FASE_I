@@ -1,0 +1,43 @@
+/* Estilos generales para pantalla grande */
+/* ... */
+
+/* Estilos para tabletas */
+@media (max-width: 991px) {
+    body {
+       font-size: 14px; /* Ajusta el tamaño de la fuente para tabletas */
+    }
+    /* Agrega estilos específicos para tabletas aquí */
+ }
+ 
+ /* Estilos para dispositivos móviles */
+ @media screen and (max-width: 767px) {
+    /* Reducir el tamaño del icono del teatro */
+    #icono {
+        width: 20%; /* Puedes ajustar el tamaño según tus necesidades */
+    }
+
+    /* Reducir el tamaño de los enlaces */
+    .menu_iconb a {
+        font-size: 12px; 
+     }
+     .right_header_info ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+     }
+
+     .right_header_info ul li {
+        display: inline-block;
+        margin-right: 10px; /* Espacio entre los elementos */
+    }
+    .right_header_info ul li a {
+        text-decoration: none;
+    }
+
+    .slider_section h4{
+        font-size: 40px;
+        text-align: center;
+        padding-left: 150px;
+        padding-top: 300px;
+    }
+}
