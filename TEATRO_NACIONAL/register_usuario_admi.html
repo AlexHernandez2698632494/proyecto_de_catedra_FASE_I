@@ -113,71 +113,135 @@
                      <h2>Teatro Nacional</h2>
                      <ul>
                         <li class="menu_iconb_register">
-                           <a href="Javascript:void(0)">Cerrar Sesión</a>
+                           <a href="">Crear Usuario</a>
                         </li>
                      </ul>
+                     <div class="continens">
+                        <button id="mostrarFormulario">Mostrar Formulario</button>
+                        <div id="formulario" class="hidden">
+                           <label for="nombre">Nombre:</label>
+                           <input type="text" id="nombre" required><br>
+
+                           <label for="apellido">Apellido:</label>
+                           <input type="text" id="apellido" required><br>
+
+                           <label for="fecha">Fecha de Contratación:</label>
+                           <input type="date" id="fecha" placeholder="dd/mm/yy" required><br>
+
+                           <label for="usuario">Usuario:</label>
+                           <input type="text" id="usuario" required><br>
+
+                           <label for="contrasena">Contraseña:</label>
+                           <input type="password" id="contrasena" required><br>
+
+                           <label for="rol">Rol:</label>
+                           <select id="rol" required>
+                              <option value="administrador">Administrador</option>
+                              <option value="gestor">Gestor</option>
+                           </select><br>
+
+                           <button id="guardar">Guardar</button>
+                        </div>
+                     </div>
                   </div>
                </div>
             </div>
          </div>
-         <!-- end customer -->
-         <!--  footer -->
-         <footer>
-            <div class="footer">
-               <div class="container">
-                  <p>MINISTERIO DE CULTURA
-                     Edificio A-5 Plan Maestro, Centro de Gobierno, Alameda Juan Pablo II y calle Guadalupe, San
-                     Salvador, El Salvador.</p>
+      </div>
+      <!-- end customer -->
+      <!--  footer-->
+      <footer>
+         <div class="footer">
+            <div class="container">
+               <div class="row">
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 ">
+                     <div class="address">
+                        <i class="bi bi-geo-alt">
+                           <p>MINISTERIO DE CULTURA
+                              Edificio A-5 Plan Maestro, Centro de Gobierno, Alameda Juan Pablo II y calle Guadalupe,
+                              San Salvador, El Salvador.</p>
+                        </i>
+                     </div>
+                     <div class="telefono">
+                        <i class="bi bi-telephone"></i>
+                        <p>+503 2501-4400</p>
+                     </div>
+                     <div class="correo">
+                        <i class="bi bi-envelope"></i>
+                        <p>comunicaciones@cultura.gob.sv</p>
+                     </div>
+                  </div>
+                  <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                     <div class="row">
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                           <div class="address">
+                              <img src="../images/Logo_Gobierno.png"
+                                 alt="logo Gabinete del Gobierno de la Republica de El Salvador" class="logoGabinete">
+                           </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                           <div class="address">
+                              <h3>Únete a nuestra comunidad</h3>
+                              <i class="bi bi-facebook"></i>
+                              <i class="bi bi-instagram"></i>
+                              <i class="bi bi-twitter"></i>
+                              <i class="bi bi-youtube"></i>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
                </div>
             </div>
-         </footer>
-         <!-- end footer -->
-      </div>
-      <div class="overlay"></div>
-      <!-- Javascript files-->
-      <script src="../js/jquery.min.js"></script>
-      <script src="../js/popper.min.js"></script>
-      <script src="../js/bootstrap.bundle.min.js"></script>
-      <script src="../js/jquery-3.0.0.min.js"></script>
-      <!-- sidebar -->
-      <script src="../js/jquery.mCustomScrollbar.concat.min.js"></script>
-      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
-      <script src="../js/custom.js"></script>
-      <script type="text/javascript">
-         $(document).ready(function () {
-            $("#sidebar").mCustomScrollbar({
-               theme: "minimal"
-            });
-
-            $('#dismiss, .overlay').on('click', function () {
-               $('#sidebar').removeClass('active');
-               $('.overlay').removeClass('active');
-            });
-
-            $('#sidebarCollapse').on('click', function () {
-               $('#sidebar').addClass('active');
-               $('.overlay').addClass('active');
-               $('.collapse.in').toggleClass('in');
-               $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-            });
+         </div>
+      </footer>
+      <!-- end footer -->
+   </div>
+   <div class="overlay"></div>
+   <!-- Javascript files-->
+   <script src="../js/jquery.min.js"></script>
+   <script src="../js/popper.min.js"></script>
+   <script src="../js/bootstrap.bundle.min.js"></script>
+   <script src="../js/jquery-3.0.0.min.js"></script>
+   <!-- sidebar -->
+   <script src="../js/jquery.mCustomScrollbar.concat.min.js"></script>
+   <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+   <script src="../js/custom.js"></script>
+   <script src="../js/app_usurio.js"></script>
+   <script type="text/javascript">
+      $(document).ready(function () {
+         $("#sidebar").mCustomScrollbar({
+            theme: "minimal"
          });
-      </script>
-      <script>
-         $(document).ready(function () {
-            $(".fancybox").fancybox({
-               openEffect: "none",
-               closeEffect: "none"
-            });
 
-            $(".zoom").hover(function () {
-
-               $(this).addClass('transition');
-            }, function () {
-
-               $(this).removeClass('transition');
-            });
+         $('#dismiss, .overlay').on('click', function () {
+            $('#sidebar').removeClass('active');
+            $('.overlay').removeClass('active');
          });
-      </script>
+
+         $('#sidebarCollapse').on('click', function () {
+            $('#sidebar').addClass('active');
+            $('.overlay').addClass('active');
+            $('.collapse.in').toggleClass('in');
+            $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+         });
+      });
+   </script>
+   <script>
+      $(document).ready(function () {
+         $(".fancybox").fancybox({
+            openEffect: "none",
+            closeEffect: "none"
+         });
+
+         $(".zoom").hover(function () {
+
+            $(this).addClass('transition');
+         }, function () {
+
+            $(this).removeClass('transition');
+         });
+      });
+   </script>
 
 </body>
 

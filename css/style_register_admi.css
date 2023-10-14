@@ -343,6 +343,7 @@ h4 {
 
 .right_header_info_register h2{
     text-align: center;
+    margin: 10%;
 }
 
 .right_header_info_register ul {
@@ -367,6 +368,17 @@ h4 {
 
 .menu_iconb_register a {
     color: rgb(255, 255, 255);
+}
+
+.continens {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
 }
 
 .slider_cont_section h4 {
@@ -819,37 +831,63 @@ border-radius: inherit;}
 /** end reqeste section **/
 
 
-/** footer section **/
-
-.footer {
-    background-image: linear-gradient(to bottom, #303845, #3C4557, #363D4D);
-    padding-top: 90px;
-    padding: 20px 0px;
-    margin-top: 70px;
-}
-
-.footer p {
-    color: #ffffff;
-    font-size: 18px;
-    line-height: 22px;
-    text-align: center;
-}
-
-.footer a {
-    color: #ffffff;
-}
-
-.footer a:hover {
-    color: #fff;
-}
-
-#map {
-    height: 100%;
-    min-height: 480px;
-}
-
-
-/** end footer section **/
+    /** footer section **/
+    footer {
+        background-color: #f8f9fa;
+        padding: 20px 0;
+    }
+    
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: left;
+    }
+    
+    .container {
+        max-width: 1200px;
+        width: 100%;
+        padding: 0 20px;
+    }
+    
+    .col-xl-6,
+    .col-lg-6,
+    .col-md-6,
+    .col-sm-12 {
+        padding: 0 15px;
+    }
+    
+    .address {
+        margin-bottom: 15px;
+    }
+    
+    .telefono, .correo {
+        display: flex;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+    
+    /* Estilos para el logo */
+    .logoGabinete {
+        width: 100%;
+        max-width: 150px;
+        height: auto;
+        margin-bottom: 15px;
+    }
+    
+    /* Estilos para los íconos de redes sociales */
+    h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    
+    .bi {
+        font-size: 24px;
+        margin-right: 10px;
+    }
+    
+    
+    /** end footer section **/
 
 
 /* ---------------------------------------------------
