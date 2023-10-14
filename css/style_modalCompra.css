@@ -1,4 +1,5 @@
 /* estilo del modal aun me falta*/
+/* formulario obra con el moda*/
 .modal{
     position: fixed;
     top: 0;
@@ -9,6 +10,9 @@
     display: flex;
     opacity: 0;
     pointer-events: none;
+}
+.container form .row .col{
+    flex: 1 1 250px;
 }
 
 .modalContainer{
@@ -41,26 +45,30 @@
 .modal_close{
     text-decoration: none;
     color: white;
-    background-color: red;
-    padding: 1em 3em;
+    background-color: blue;
     border: 1px solid;
-    border-radius: 6px;
+    text-align: center;
+    border-radius: 2px;
     display: inline-block;
-    font-weight: 300;
-    transition: background-color .3s;   
+    font-weight: 90;
+    
 }
 
 .modal_close:hover{
-    color: red;
-    background-color: white;
+    color: white;
+    background-color: rgb(8, 8, 122);
 }
+
 
 .modal--show{
     opacity: 1;
     pointer-events: unset;
 }
 
+
+
 /*diseño de la tabla de la siguiente ventana despues del modal*/
+/*formulario de compra donde esta la tabla*/
 table, th, td{
     border: 1px solid black;
     border-collapse: collapse;
@@ -71,4 +79,22 @@ footer{
 }
 button{
     align-items: center;
+}
+
+
+
+/* boton del formulario Compra */
+.btnContinuar{
+    display: inline-block;
+    background-color: blue;
+    color: white;
+    text-decoration: none;
+    font-weight: 100;
+    border-radius: 5px;
+    margin: 2px;
+    padding: 10px;
+}
+.btnContinuar:hover{
+    color: white;
+    background-color: rgb(8, 8, 122);
 }
