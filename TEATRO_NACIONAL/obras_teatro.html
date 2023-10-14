@@ -2,99 +2,316 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <link rel="stylesheet" href="../css/style_modalCompra.css">
-    <title>Teatro Nacional</title>
-</head>
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>cs</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="../css/style_obras.css">
+    <!-- Responsive-->
+    <link rel="stylesheet" href="../css/responsive.css">
+    <!-- fevicon -->
+    <link rel="icon" href="../images/fevicon.png" type="image/gif" />
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="../css/jquery.mCustomScrollbar.min.css">
+    <!-- Tweaks for older IEs-->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css"
+        media="screen">
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
-<body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-ethernet"
-                viewBox="0 0 16 16">
-                <path
-                    d="M14 13.5v-7a.5.5 0 0 0-.5-.5H12V4.5a.5.5 0 0 0-.5-.5h-1v-.5A.5.5 0 0 0 10 3H6a.5.5 0 0 0-.5.5V4h-1a.5.5 0 0 0-.5.5V6H2.5a.5.5 0 0 0-.5.5v7a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 .5-.5ZM3.75 11h.5a.25.25 0 0 1 .25.25v1.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-1.5a.25.25 0 0 1 .25-.25Zm2 0h.5a.25.25 0 0 1 .25.25v1.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-1.5a.25.25 0 0 1 .25-.25Zm1.75.25a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v1.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-1.5ZM9.75 11h.5a.25.25 0 0 1 .25.25v1.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-1.5a.25.25 0 0 1 .25-.25Zm1.75.25a.25.25 0 0 1 .25-.25h.5a.25.25 0 0 1 .25.25v1.5a.25.25 0 0 1-.25.25h-.5a.25.25 0 0 1-.25-.25v-1.5Z" />
-                <path
-                    d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2ZM1 2a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2Z" />
-            </svg>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav ms-auto">
-                    <a class="nav-link" href="#">Inicio</a>
-                    <a class="nav-link" href="historia_teatro.html">Historia</a>
-                    <a class="nav-link" href="#">Obras</a>
-                    <a class="nav-link" href="calendario_teatro.html">Calendario</a>
-                    <a class="nav-link">Compra</a>
+</head>
+<!-- body -->
+
+<body class="main-layout">
+    <!-- loader  -->
+    <div class="loader_bg">
+        <div class="loader"><img src="../images/ZKZg.gif" alt="#" /></div>
+    </div>
+    <div class="wrapper">
+        <!-- end loader -->
+        <div class="sidebar">
+            <!-- Sidebar  -->
+            <nav id="sidebar">
+                <div id="dismiss">
+                    <i class="fa fa-arrow-left"></i>
                 </div>
-            </div>
+                <ul class="list-unstyled components">
+                    <li>
+                        <a href="./index_tetro.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="#">Historia</a>
+                    </li>
+                    <li class="active">
+                        <a href="./obras_teatro.html">Obras</a>
+                    </li>
+                    <li>
+                        <a href="./calendario_teatro.html">Calendario</a>
+                    </li>
+                    <li>
+                        <a href="./FormularioCompra.html">Comprar</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-    </nav>
-    <br><br><br><br>
-    <div class="container">
-        <div class="row aling-items-md-stretch">
-            <div class="col-md-5">
-                <div class="h-100 p-5 text-bg-ligth">
-                    <div id="carouselExampleDark" class="carousel carousel-dark slide">
-                        <div class="imagenObra">
-                            <div class="carousel-item active" data-bs-interval="10000">
-                                <img src="../images/game1.jpg" class="d-block w-100" alt="..." width="220px"
-                                    height="500px">
+        <div id="content">
+            <!-- header -->
+            <header>
+                <!-- header inner -->
+                <div class="head_top">
+                    <div class="header">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-3 logo_section">
+                                    <div class="full">
+                                        <div class="center-desk">
+                                            <div class="logo">
+                                                <a href="./index_tetro.html"><img src="../icon/teatro-icono.png"
+                                                        alt="#"></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-9">
+                                    <div class="right_header_info">
+                                        <ul>
+                                            <li class="menu_iconb">
+                                                <a href="../index.html">Cerrar sesión</a>
+                                            </li>
+                                            <li>
+                                                <button type="button" id="sidebarCollapse">
+                                                    <img src="../images/menu_icon2.png" alt="#" />
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-6">
-                <br>
-                <section class="content">
-                  <h2>“Evocación mitológica”</h2>
-                  <h4>septiembre 24 @ 16:00 - 18:00 $1.75 - $10.00</h4>
-                  <!--<img src="../assets/img/Evocacion-mitologica.jpg" width="700px" alt="Obra Nombre de la Obra"> -->
-                  <p>Acompáñanos a la Segunda Temporada 2023, de la Compañía Nacional de Danza.</p>
-                  <p>La pieza creación del coreógrafo invitado, Donald Byrd, es bailada con la composición original, “Leyendas del reino de Tláloc”, 
-                  del joven y talentoso compositor salvadoreño, Daniel Domínguez e interpretada por músicos invitados.</p>
-                  <p>Salvadoreños $1.00 | extranjeros residentes $2.00 | no residentes $3.00</p>
-                  <section class="story">
-                      <h2>Entradas</h2>
-                      <hr>
-                      <div id="tribe__details__content--54842"
-                          class="tribe-common-b2 tribe-common-b3--min-medium tribe-tickets__tickets-item-details-content">
-                          240923  - “Evocación mitológica” - Salvadoreños: $1.00</div>
-                      <hr>
-                      <div id="tribe__details__content--54842"
-                          class="tribe-common-b2 tribe-common-b3--min-medium tribe-tickets__tickets-item-details-content">
-                          240923  - “Evocación mitológica”  - extranjeros residentes: $2.00</div>
-                      <div id="tribe__details__content--54842"
-                          class="tribe-common-b2 tribe-common-b3--min-medium tribe-tickets__tickets-item-details-content">
-                          240923  - “Evocación mitológica”  - no residentes: $10.00</div>
-                      <hr>
-                  </section>
-              </section>
-              <button id="abrir_cta">Comprar
-                
-              </button>
-                          <div id=" modal-container" class="modalContainer">
-                            <div class="modal-content">
-                                <img src="../images/game3.jpg" alt="" width="200px" class="modal_img">
-                                <h2 class="modal_title">Compra de boletos</h2>
-                                <p class="modal_parrafo">Seleccione cuantas entradas quiere!</p>
-                                <a href="FormularioCompra.html" class="modal_close">Continuar Compra</a>
-                                <br>
-                                <a href="#" class="modal_close">Cerrar</a>
+            </header>
+            <!-- end header inner -->
+            <!-- end header -->
+            <!-- Categories -->
+            <!-- casino -->
+            <div id="game" class="casino">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="titlepage">
+                                <h3>Cosas de Maíz</h3>
+                                <h2>octubre 14 @ 10:00 - 12:00</h2>
+                                <span></span>
                             </div>
                         </div>
-            </div>
-        </div>
-    </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 padding_bottom">
+                            <div class="game_box">
+                                <figure><img src="../images/obras/Cosas-de-maíz-eventos-1536x709.jpg" alt="#" />
+                                </figure>
+                            </div>
+                            <div class="titlepage">
+                                <h4>Se parte de este taller lúdico cuya temática es la utilización de elementos con maíz
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
-        <script src="../js/obrasCompras.js"></script>
-        <footer>Footer</footer>
+                                    Participación gratuita</h4>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <section class="content">
+                                <p>Salvadoreños $1.00 | extranjeros residentes $2.00 | no residentes $3.00</p>
+                                <section class="story">
+                                    <h2>Entradas</h2>
+                                    <hr>
+                                    <div id="tribe__details__content--54842"
+                                        class="tribe-common-b2 tribe-common-b3--min-medium tribe-tickets__tickets-item-details-content">
+                                        240923 - “Evocación mitológica” - Salvadoreños: $1.00</div>
+                                    <hr>
+                                    <div id="tribe__details__content--54842"
+                                        class="tribe-common-b2 tribe-common-b3--min-medium tribe-tickets__tickets-item-details-content">
+                                        240923 - “Evocación mitológica” - extranjeros residentes: $2.00</div>
+                                    <div id="tribe__details__content--54842"
+                                        class="tribe-common-b2 tribe-common-b3--min-medium tribe-tickets__tickets-item-details-content">
+                                        240923 - “Evocación mitológica” - no residentes: $10.00</div>
+                                    <hr>
+                                </section>
+                            </section>
+                            <section class="detalles">
+                                <div class="columnas">
+                                    <div class="columna">
+                                        <h4>Detalles</h4>
+                                        <h5>Fecha:</h5>
+                                        <h6>septiembre 12</h6>
+                                        <h5>Hora:</h5>
+                                        <h6>10:00-12:00</h6>
+                                    </div>
+                                    <div class="columna">
+                                        <h4>Organizador</h4>
+                                        <h5><a href="#">Ministerio de Cultura</a></h5>
+                                    </div>
+                                    <div class="columna">
+                                        <h4>Lufar</h4>
+                                        <h5><a href="#">Ministerio de Cultura</a></h5>
+                                    </div>
+                                </div>
+                            </section>
+                            <br>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                data-target="#ComprarModal">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end casino -->
+            <!-- Modal -->
+            <div class="modal fade" id="ComprarModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Cosas de Maíz</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <section class="detalles_modal">
+                                <div class="columnasmodal">
+                                    <div class="columnamodal">
+                                        <h4>141023-Cosas de Maíz-"Salvadoreños"</h4>
+                                    </div>
+                                    <div class="columnamodal">
+                                        <h4>$1</h4>
+                                    </div>
+                                    <div class="columnamodal">
+                                        <h4>- 1 +</h4>
+                                    </div>
+                                    <div class="columnamodal">
+                                        <h4>$ 1.00</h4>
+                                    </div>
+                                </div>
+                            </section>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                            <a href="./FormularioCompra.html" class="btn btn-primary">Save changes</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  footer -->
+            <footer>
+                <div class="footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 ">
+                                <div class="address">
+                                    <i class="bi bi-geo-alt">
+                                        <p>MINISTERIO DE CULTURA
+                                            Edificio A-5 Plan Maestro, Centro de Gobierno, Alameda Juan Pablo II y calle
+                                            Guadalupe,
+                                            San Salvador, El Salvador.</p>
+                                    </i>
+                                </div>
+                                <div class="telefono">
+                                    <i class="bi bi-telephone"></i>
+                                    <p>+503 2501-4400</p>
+                                </div>
+                                <div class="correo">
+                                    <i class="bi bi-envelope"></i>
+                                    <p>comunicaciones@cultura.gob.sv</p>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                                <div class="row">
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                                        <div class="address">
+                                            <img src="../images/Logo_Gobierno.png"
+                                                alt="logo Gabinete del Gobierno de la Republica de El Salvador"
+                                                class="logoGabinete">
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6">
+                                        <div class="address">
+                                            <h3>Únete a nuestra comunidad</h3>
+                                            <i class="bi bi-facebook"></i>
+                                            <i class="bi bi-instagram"></i>
+                                            <i class="bi bi-twitter"></i>
+                                            <i class="bi bi-youtube"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- end footer -->
+        </div>
+        <div class="overlay"></div>
+        <!-- Javascript files-->
+        <script src="../js/jquery.min.js"></script>
+        <script src="../js/popper.min.js"></script>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script src="../js/jquery-3.0.0.min.js"></script>
+        <!-- sidebar -->
+        <script src="../js/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+        <script src="../js/custom.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("#sidebar").mCustomScrollbar({
+                    theme: "minimal"
+                });
+
+                $('#dismiss, .overlay').on('click', function () {
+                    $('#sidebar').removeClass('active');
+                    $('.overlay').removeClass('active');
+                });
+
+                $('#sidebarCollapse').on('click', function () {
+                    $('#sidebar').addClass('active');
+                    $('.overlay').addClass('active');
+                    $('.collapse.in').toggleClass('in');
+                    $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+                });
+            });
+        </script>
+        <script>
+            $(document).ready(function () {
+                $(".fancybox").fancybox({
+                    openEffect: "none",
+                    closeEffect: "none"
+                });
+
+                $(".zoom").hover(function () {
+
+                    $(this).addClass('transition');
+                }, function () {
+
+                    $(this).removeClass('transition');
+                });
+            });
+        </script>
+
 </body>
 
 </html>
-
