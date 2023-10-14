@@ -241,27 +241,21 @@ img {
     flex-wrap: wrap;
 }
 
-<<<<<<< HEAD
 #icono {
     max-width: 50%;
-=======
-#icono{
-    width: 50%;
->>>>>>> c4a37465693d935e713cf6da05e98e49deeed8fe
 }
 
 /*---------------------------------------------------------------------
     skeleton
 ---------------------------------------------------------------------*/
-<<<<<<< HEAD
+
 .emballage {
     max-width: 350px;
     min-height: 500px;
-=======
+}
 .emballage{
     width: 350px;
     height: 500px;
->>>>>>> c4a37465693d935e713cf6da05e98e49deeed8fe
     margin: 80px auto;
     padding: 40px 30px 30px 30px;
     background-color: #ecf0f3;
@@ -348,15 +342,9 @@ h4 {
     text-align: center;
     padding: 100px;
 }
-<<<<<<< HEAD
-
-=======
-/*
->>>>>>> c4a37465693d935e713cf6da05e98e49deeed8fe
 @media(max-width: 380px) {
     .emballage {
         margin: 30px 20px;
         padding: 40px 15px 15px 15px;
     }
 }
-*/
