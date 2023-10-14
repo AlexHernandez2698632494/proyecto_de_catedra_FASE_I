@@ -1,0 +1,125 @@
+/* Estilos generales para pantalla grande */
+/* ... */
+
+/* Estilos para tabletas */
+@media (max-width: 991px) {
+    body {
+       font-size: 10px; /* Ajusta el tamaño de la fuente para tabletas */
+       background-image: url('../images/IMG-20220202-WA0183.jpg');
+       background-size: cover;
+       }
+    /* Reducir el tamaño de los enlaces */
+    .menu_iconb a {
+        font-size: 12px; 
+     }
+     .right_header_info ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        float: right;
+     }
+     .right_header_info ul li {
+        display: inline-block;
+        margin-right: 10px; /* Espacio entre los elementos */
+    }
+    .right_header_info ul li a {
+        text-decoration: none;
+    }
+
+    .slider_section h4{
+        font-size: 40px;
+        text-align: center;
+        padding-left: 150px;
+        padding-top: 300px;
+    }
+    .emballage {
+        margin: 40px auto;
+        padding: 30px 20px 20px 20px;
+        max-width: 100%;
+    }
+
+    .logo_login {
+        width: 80px;
+    }
+
+    .logo_login img {
+        height: 60px;
+    }
+
+    .emballage .name {
+        font-size: 1.2rem;
+    }
+
+    .emballage .form-field input {
+        font-size: 1rem;
+        padding: 8px 12px 8px 8px;
+    }
+
+    .emballage .btn {
+        height: 35px;
+        font-size: 0.9rem;
+    }
+    .banner_main {
+        padding-top: 10%;
+    }
+}
+    /* Agrega estilos específicos para tabletas aquí */
+
+ @media (max-width:767px) {
+    #icono{
+        width: 20%;
+    }  
+     .right_header_info ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        float: right;
+     }
+     .right_header_info ul li {
+        display: inline;
+        margin-right: 0; /* Espacio entre los elementos */
+    }
+    .right_header_info ul li a {
+        text-decoration: none;
+    }
+
+    .slider_section h4{
+        font-size: 40px;
+        text-align: center;
+        padding-left: 150px;
+        padding-top: 300px;
+    }
+    .emballage {
+        margin: 40px auto;
+        padding: 30px 20px 20px 20px;
+        max-width: 100%;
+    }
+
+    .logo_login {
+        width: 80px;
+    }
+
+    .logo_login img {
+        height: 60px;
+    }
+
+    .emballage .name {
+        font-size: 1.2rem;
+    }
+
+    .emballage .form-field input {
+        font-size: 1rem;
+        padding: 8px 12px 8px 8px;
+    }
+
+    .emballage .btn {
+        height: 35px;
+        font-size: 0.9rem;
+    }
+    
+    .banner_main {
+        padding-top: 30%;
+    }
+ }
+ /* Estilos para dispositivos móviles */
+
